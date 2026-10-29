@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <header class="calculator-header">
+            <div>
+                <p class="eyebrow">WEB TOOL</p>
+                <h1>Scientific Calculator</h1>
+            </div>
+        </header>
+
+        <section class="display" aria-label="Calculator display" aria-live="polite">
+            <div id="expression" class="expression">Ready to calculate</div>
+            <output id="result" class="result">0</output>
+        </section>
+
+        <section class="scientific-grid" aria-label="Scientific functions">
+            <button type="button" class="key scientific" data-function="sin">sin</button>
+            <button type="button" class="key scientific" data-function="cos">cos</button>
+            <button type="button" class="key scientific" data-function="tan">tan</button>
+            <button type="button" class="key scientific" data-function="sqrt">√</button>
+            <button type="button" class="key scientific" data-function="square">x²</button>
+            <button type="button" class="key scientific" data-function="log">log</button>
+            <button type="button" class="key scientific" data-function="ln">ln</button>
+            <button type="button" class="key scientific" data-function="reciprocal">1/x</button>
+        </section>
+
+        <section class="keypad" aria-label="Calculator buttons">
+            <button type="button" class="key clear" data-action="clear">C</button>
+            <button type="button" class="key utility" data-action="backspace" aria-label="Backspace">⌫</button>
+            <button type="button" class="key operator" data-operator="÷">÷</button>
+            <button type="button" class="key operator" data-operator="×">×</button>
+
+            <button type="button" class="key number" data-number="7">7</button>
+            <button type="button" class="key number" data-number="8">8</button>
+            <button type="button" class="key number" data-number="9">9</button>
+            <button type="button" class="key operator" data-operator="-">−</button>
+
+            <button type="button" class="key number" data-number="4">4</button>
+            <button type="button" class="key number" data-number="5">5</button>
+            <button type="button" class="key number" data-number="6">6</button>
+            <button type="button" class="key operator" data-operator="+">+</button>
+
+            <button type="button" class="key number" data-number="1">1</button>
+            <button type="button" class="key number" data-number="2">2</button>
+            <button type="button" class="key number" data-number="3">3</button>
+            <button type="button" class="key equals" data-action="equals">=</button>
+
+            <button type="button" class="key number zero" data-number="0">0</button>
+            <button type="button" class="key number" data-action="decimal">.</button>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
